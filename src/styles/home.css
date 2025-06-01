@@ -11,7 +11,7 @@ ul {
 }
 
 .hero {
-    padding: 20px 0;
+    padding: 70px 0;
     display: grid;
     box-sizing: border-box;
     width: 100%;
@@ -176,6 +176,83 @@ ul {
     height: 300px;
 }
 
+.home-main {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.home-main .creating {
+    padding: 70px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #8c8c8c;
+}
+
+.creating h1 {
+    font-size: 5.5em;
+    font-family: var(--specialFont);
+    line-height: 100%;
+    margin-bottom: 50px;
+}
+
+.creating .create-item {
+    padding: 20px 0;
+    box-sizing: border-box;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    transition: all .3s ease-in-out;
+    position: relative;
+    border: 1px solid red;
+}
+.c-item2 {
+    margin: 10px 0;
+}
+.create-item:hover {
+    padding: 60px 40px;
+    background-color: #d0d0d0;
+}
+
+.create-item .create-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.create-item h2 {
+    font-size: 27px;
+    line-height: 100%;
+    font-weight: 500;
+}
+
+.create-item p {
+    color: var(--textColor);
+    font-size: 13px;
+}
+
+.create-item .create-img {
+    background-image: url(../assets/residential.png);
+    background-position: center;
+    background-size: cover;
+    transform: rotate(355deg);
+    width: 250px;
+    right: 100px;
+    top: -50px;
+    position: absolute;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.c-item1:hover .c-img1, .c-item2:hover .c-img2, .c-item3:hover .c-img3{
+    opacity: 1;
+    visibility: visible;
+    max-height: 300px;
+    height: 300px;
+}
+
+
 @media screen and (max-width: 850px) {
     .home-page {
         padding: 0 30px;
@@ -183,6 +260,7 @@ ul {
     .hero .h-two {
         padding: 20px;
     }
+    .hero
     .h-two h1 {
         font-size: 50px;
     }
@@ -191,6 +269,18 @@ ul {
     }
     .h-tres .h-big {
         font-size: 35px;
+    }
+    .create-item .create-img {
+        right: 15px;
+        width: 250px;
+        height: 200px;
+        top: -35px;
+    }
+    .create-item:hover {
+        padding: 60px 0;
+    }.c-item1:hover .c-img1,  .c-item2:hover .c-img2, .c-item3:hover .c-img3{
+        max-height: 200px;
+        height: 200px;
     }
 }
 
