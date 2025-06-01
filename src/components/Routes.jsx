@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { NavLink } from "react-router-dom"
 
 export default function NavBar() {
@@ -6,6 +6,13 @@ export default function NavBar() {
     const toggleMenu = () => {
         setShowMenu(!showMenu)
     }
+    useEffect(() => {
+        if(showMenu) {
+            document.body.classList.add('no-scroll')
+        } else {
+            document.body.classList.remove('no-scroll')
+        }
+    }, [showMenu])
     return (
         <div className="nav-bar">
             <NavLink to="/"><h1 className="logo">Aesthetic</h1></NavLink>

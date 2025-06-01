@@ -9,6 +9,10 @@
     --mainFont: "montserrat", sans-serif;
     --specialFont: "DM Serif Display", sans-serif;
 }
+ .no-scroll{
+    overflow: hidden;
+    height: 100vh;
+}
 
 .logo {
     font-size: 25px;
