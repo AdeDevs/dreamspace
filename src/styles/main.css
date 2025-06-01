@@ -1,0 +1,233 @@
+.home-main .unveiling {
+    padding: 70px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #8c8c8c;
+}
+
+.unveiling h1 {
+    text-align: center;
+    font-size: 5em;
+    font-family: var(--specialFont);
+    line-height: 100%;
+}
+
+.unveiling .services {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0 35px;
+}
+
+.services .service-item {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    text-align: right;
+}
+
+.services .s-item2,
+.services .s-item5 {
+    text-align: left;
+}
+
+.service-item h2 {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.service-item p {
+    font-size: 13px;
+    color: var(--textColor);
+}
+
+.services .s-item3 {
+    grid-column: 2/3;
+    height: 600px;
+    grid-row: 1/3;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../assets/extra.png);
+}
+
+.home-main .portfolio {
+    padding: 70px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #8c8c8c;
+}
+
+.portfolio .p-head {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: end;
+}
+
+.p-head h1 {
+    font-size: 5em;
+    font-family: var(--specialFont);
+    line-height: 100%;
+    text-transform: capitalize;
+}
+
+.p-head p {
+    font-size: 15px;
+    color: var(--textColor);
+}
+
+.portfolio .projects {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 40px;
+}
+
+.projects .project {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project .p-img {
+    background-size: cover;
+    background-position: center;
+    background-color: var(--mainColor);
+}
+.project .p-img1 {
+    background-image: url(../assets/contemporary.png);
+    height: 550px;
+}
+.project .p-img2 {
+    background-image: url(../assets/rustic.png);
+    height: 650px;
+}
+.project .p-img3 {
+    background-image: url(../assets/minimalist.png);
+    height: 650px;
+}
+.project .p-img4 {
+    background-image: url(../assets/timeless.png);
+    height: 550px;
+}
+
+.project h2 {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.project p {
+    font-size: 13px;
+    color: var(--textColor);
+}
+
+.project button {
+    width: fit-content;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 20px;
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+    transform: rotate(360deg);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.project button:hover {
+    background-color: var(--mainColor);
+    transform: rotate(320deg);
+}
+
+.portfolio .work-btn {
+    border: 1px solid transparent;
+    background-color: var(--mainColor);
+    font-size: 14px;
+    font-family: inherit;
+    padding: 13px 27px;
+    border-radius: 30px;
+    color: #fff;
+    text-transform: capitalize;
+    display: flex;
+    gap: 10px;
+    align-content: center;
+    margin: 50px auto 0 auto;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.work-btn span {
+    display: inline-flex;
+    font-size: 17px;
+}
+.work-btn:hover {
+    background-color: transparent;
+    border: 1px solid var(--mainColor);
+    color: var(--mainColor);
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .home-main .unveiling {
+        padding: 30px 0;
+    }
+    .unveiling h1 {
+        font-size: 3.5em;
+    }
+    .unveiling .services {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+    .services .service-item {
+        display: block;
+        text-align: left;
+    }
+    .services .s-item3 {
+        height: 300px;
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .service-item h2 {
+        font-size: 22px;
+    }
+    .home-main .portfolio {
+        padding: 30px 0;
+    }
+    .portfolio .p-head {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .p-head h1 {
+        font-size: 3.5em;
+    }
+    .portfolio .projects {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .project .p-img1, .project .p-img4 {
+        height: 300px;
+    }
+    .project .p-img2, .project .p-img3 {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .unveiling h1 {
+        font-size: 3em;
+    }
+    .unveiling .services {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
