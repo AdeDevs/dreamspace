@@ -77,18 +77,6 @@
     color: #1c1c1d;
 }
 
-.nav-bar.information h1,
-.nav-bar.information .desk-nav {
-    color: #f4f2ea;
-}
-
-.nav-bar.information a:hover,
-.nav-bar.information a.active {
-    text-decoration-thickness: 2px;
-    text-underline-offset: 3px;
-    text-decoration-color: #f4f2ea;
-}
-
 .toggle {
     display: none;
     width: 25px;

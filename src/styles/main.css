@@ -171,7 +171,208 @@
     color: var(--mainColor);
 }
 
+.home-main .reviews {
+    padding: 70px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #8c8c8c;
+}
 
+.reviews h1 {
+    font-size: 5.4em;
+    font-family: var(--specialFont);
+    line-height: 100%;
+    text-align: center;
+}
+
+.reviews .review-img {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 100px;
+    margin: 40px 0;
+}
+
+.review-img .r-avt {
+    background-color: #8c8c8c;
+    background-position: center;
+    background-image: url(../assets/max.jpeg);
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+}
+.review-img .avt1, .review-img .avt3 {
+    height: 100px;
+    background-image: url(../assets/rose.jpeg);
+    width: 100px;
+}
+.review-img .avt3 {
+    background-image: url(../assets/bat.jpeg);
+}
+
+.reviews .testimonials {
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.testimonials h2 {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.testimonials p {
+    font-size: 14px;
+    color: var(--textColor);
+}
+.testimonials .stars {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+.stars li {
+    display: flex;
+    font-size: 17px;
+}
+.testimonials .comment {
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.testimonials .controller {
+    display: flex;
+    text-align: center;
+    gap: 13px;
+    justify-content: center;
+    align-items: center;
+}
+.controller li {
+    display: flex;
+    border-radius: 100%;
+}
+.controller .nav-btn {
+    padding: 7px;
+    border: 1px solid #000;
+    font-size: 17px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.nav-btn:hover {
+    border: 1px solid transparent;
+    color: #fff;
+    background-color: var(--mainColor);
+}
+
+.controller .nav-selector {
+    padding: 5px;
+    background-color: #c9c9c9;
+    height: fit-content;
+}
+.controller .nav-special {
+    background-color: #000;
+}
+
+footer {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer .footer-main {
+    padding: 70px 0 30px 0;
+}
+
+.footer-main h1 {
+    font-size: 5.4em;
+    font-family: var(--specialFont);
+    line-height: 100%;
+}
+
+.footer-main .ft-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ft-head button {
+    width: fit-content;
+    background-color: var(--mainColor);
+    border: none;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 40px;
+    display: flex;
+    box-sizing: border-box;
+    padding: 25px;
+    transform: rotate(320deg);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.ft-head button:hover {
+    background-color: transparent;
+    border: 1px solid var(--mainColor);
+    color: var(--mainColor);
+    transform: rotate(360deg);
+}
+
+.footer-main .ft-sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 70px 0 10px 0;
+    box-sizing: border-box;
+}
+
+.footer-nav {
+    flex-wrap: wrap;
+}
+.footer-nav, .socials {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 15px;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.footer-nav a {
+    color: #6e716f;
+    text-decoration-thickness: 2px;
+    text-decoration-color: transparent;
+    text-underline-offset: 1px;
+    transition: all .3s ease-in-out;
+}
+
+.footer-nav a:hover,
+.footer-nav a.active {
+    color: #1c1c1d;
+}
+
+.socials {
+    gap: 10px;
+}
+.socials li {
+    display: flex;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all .3s ease-in-out;
+    border-radius: 100%;
+    padding: 7px;
+}
+.socials li:hover {
+    background-color: var(--mainColor);
+    color: #fff;
+    border: 1px solid transparent;
+}
 
 @media screen and (max-width: 600px) {
     .home-main .unveiling {
@@ -218,6 +419,37 @@
     }
     .project .p-img2, .project .p-img3 {
         height: 350px;
+    }
+    .home-main .reviews {
+        padding: 30px 0;
+    }
+    .reviews h1 {
+        font-size: 3.5em;
+    }
+    .reviews .review-img {
+        gap: 40px;
+    }
+    .review-img .r-avt {
+        height: 100px;
+        width: 100px;
+    }
+    .review-img .avt1, .review-img .avt3 {
+        height: 70px;
+        width: 70px;
+    }
+    footer .footer-main {
+        padding: 30px 0;
+    }
+    .footer-main h1 {
+        font-size: 3.4em;
+    }
+    .ft-head button {
+        font-size: 30px;
+        padding: 20px;
+    }
+    .footer-main .ft-sub {
+        margin: 50px 0 10px 0;
+        gap: 20px;
     }
 }
 

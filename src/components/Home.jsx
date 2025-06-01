@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom"
+
 export default function HomePage() {
     return (
         <div className="home-page">
@@ -137,16 +139,16 @@ export default function HomePage() {
                     </div>
                     <button className="work-btn">view all works <span><ion-icon name="arrow-forward-outline"></ion-icon></span></button>
                 </section>
-                {/* <section className="reviews">
+                <section className="reviews">
                     <h1>Don't just take our <br /> word for it</h1>
                     <div className="review-img">
+                        <div className="r-avt avt1"></div>
                         <div className="r-avt"></div>
-                        <div className="r-avt"></div>
-                        <div className="r-avt"></div>
+                        <div className="r-avt avt3"></div>
                     </div>
                     <div className="testimonials">
-                        <h2></h2>
-                        <p></p>
+                        <h2>Maxwell Alexis</h2>
+                        <p>CEO of Garri Institute</p>
                         <ul className="stars">
                             <li><ion-icon name="star"></ion-icon></li>
                             <li><ion-icon name="star"></ion-icon></li>
@@ -154,7 +156,9 @@ export default function HomePage() {
                             <li><ion-icon name="star"></ion-icon></li>
                             <li><ion-icon name="star"></ion-icon></li>
                         </ul>
-                        <p></p>
+                        <p className="comment">
+                            "I can't express how grateful I am grateful for the Interior Agency's expertise. <br /> They completely revamped our garri shed, turning it into a place of <br /> inspiration and productivity. Their creative concepts, color schemes, and <br /> furniture choices were spot on"
+                        </p>
                         <ul className="controller">
                             <li className="nav-btn"><ion-icon name="arrow-back"></ion-icon></li>
                             <li className="nav-selector nav-special"></li>
@@ -163,8 +167,32 @@ export default function HomePage() {
                             <li className="nav-btn"><ion-icon name="arrow-forward"></ion-icon></li>
                         </ul>
                     </div>
-                </section> */}
+                </section>
             </main>
+            <footer>
+                <section className="footer-main">
+                    <div className="footer-item ft-head">
+                        <h1>Ready to transform <br /> your space</h1>
+                        <button><ion-icon name="arrow-forward"></ion-icon></button>
+                    </div>
+                    <div className="footer-item ft-sub">
+                        <h2 className="logo">Aesthetic</h2>
+                        <ul className="footer-nav">
+                            <li><NavLink to="/">Home</NavLink></li>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">services</a></li>
+                            <li><a href="#">projects</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+                        <ul className="socials">
+                            <li><ion-icon name="logo-facebook"></ion-icon></li>
+                            <li><ion-icon name="logo-linkedin"></ion-icon></li>
+                            <li><ion-icon name="logo-twitter"></ion-icon></li>
+                            <li><ion-icon name="logo-instagram"></ion-icon></li>
+                        </ul>
+                    </div>
+                </section>
+            </footer>
         </div>
     )
 }
