@@ -260,7 +260,6 @@ ul {
     .hero .h-two {
         padding: 20px;
     }
-    .hero
     .h-two h1 {
         font-size: 50px;
     }
@@ -278,17 +277,19 @@ ul {
     }
     .create-item:hover {
         padding: 60px 0;
-    }.c-item1:hover .c-img1,  .c-item2:hover .c-img2, .c-item3:hover .c-img3{
+    }
+    .c-item1:hover .c-img1,  .c-item2:hover .c-img2, .c-item3:hover .c-img3{
         max-height: 200px;
         height: 200px;
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
     .home-page {
         padding: 0 20px;
     }
     .hero {
+        padding: 50px 0;
         display: flex;
         flex-direction: column;
     }
@@ -304,5 +305,43 @@ ul {
     }
     .bg-year p {
         font-size: 20px;
+    }
+    .home-main .creating {
+        padding: 50px 0;
+    }
+    .creating h1 {
+        font-size: 3.3em;
+    }
+    .creating h1 br {
+        display: none;
+    }
+    .creating .create-item {
+        padding: 15px 0;
+    }
+    .create-item .create-txt {
+        grid-column: 1/3;
+        gap: 15px;
+    }
+    .create-item:hover {
+        padding: 30px 0;
+        background-color: #d0d0d0;
+    }
+    .create-item p br {
+        display: none;
+    }
+    .create-item .create-img{
+        position: static;
+        transform: rotate(0);
+        width: 100%;
+        grid-row: 2/3;
+        grid-column: 1/3;
+        display: none;
+    }
+    .c-item1:hover .c-img1, .c-item2:hover .c-img2, .c-item3:hover .c-img3{
+        opacity: 1;
+        display: block;
+        visibility: visible;
+        max-height: 200px;
+        height: 200px;
     }
 }
