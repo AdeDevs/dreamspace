@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 export default function HomePage() {
     return (
         <div className="home-page">
-            <header className="hero">
+            <header className="hero" id="about">
                 <section className="hero-item hero-bg h-one">
                     <div className="bg-year">
                         <p>2025</p>
@@ -44,7 +44,7 @@ export default function HomePage() {
                 <section className="hero-item h-four"></section>
             </header>
             <main className="home-main">
-                <section className="creating">
+                <section className="creating" id="services">
                     <h1>Creating Environments <br /> Tailored to You</h1>
                     <div className="create-item c-item1">
                         <div className="create-txt">
@@ -97,7 +97,7 @@ export default function HomePage() {
                     </div>
                 </section>
                 <section className="portfolio">
-                    <div className="p-head">
+                    <div className="p-head" id="porto">
                         <h1>where dreams <br /> take shape</h1>
                         <p>
                             Explore our portfolio to witness the magic we've created for our clients. From minimalistic chics to opulent luxury, we've turned dreams into stunning reality.
@@ -169,7 +169,7 @@ export default function HomePage() {
                     </div>
                 </section>
             </main>
-            <footer>
+            <footer id="contact">
                 <section className="footer-main">
                     <div className="footer-item ft-head">
                         <h1>Ready to transform <br /> your space</h1>
