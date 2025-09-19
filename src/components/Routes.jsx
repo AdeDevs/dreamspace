@@ -15,7 +15,7 @@ export default function NavBar() {
     }, [showMenu])
     return (
         <div className="nav-bar">
-            <NavLink to="/"><h1 className="logo">Aesthetic</h1></NavLink>
+            <NavLink to="/" className="logo"><h1>Aesthetic</h1></NavLink>
             <ul className="desk-nav">
                 <li><NavLink to="/">Home</NavLink></li>
                 <li><a href="#about">about us</a></li>

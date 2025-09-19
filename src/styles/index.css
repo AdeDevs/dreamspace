@@ -17,7 +17,9 @@
 .logo {
     font-size: 25px;
     line-height: 100%;
+    color: inherit;
     font-family: var(--specialFont);
+    text-decoration: none;
 }
 
 .nav-bar {
@@ -50,8 +52,12 @@
     gap: 5px;
     display: flex;
     align-items: center;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
 }
-
+.nav-bar .extras:hover {
+    color: var(--mainColor);
+}
 .extras .tel {
     font-size: 15px;
     display: flex;
@@ -60,21 +66,23 @@
 #en {
     text-decoration: underline;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 600;
     text-underline-offset: 2px;
 }
 
-.nav-bar a {
+.desk-nav a {
     color: #6e716f;
+    font-size: 13px;
     text-decoration-thickness: 2px;
     text-decoration-color: transparent;
     text-underline-offset: 1px;
+    font-weight: 600;
     transition: all .3s ease-in-out;
 }
 
-.nav-bar a:hover,
-.nav-bar a.active {
-    color: #1c1c1d;
+.desk-nav a:hover,
+.desk-nav a.active {
+    color: var(--mainColor);
 }
 
 .toggle {
@@ -181,7 +189,6 @@
 @media screen and (max-width: 550px) {
     .nav-bar {
         padding: 20px 20px;
-
     }
     .toggle {
         margin-left: 10px;
